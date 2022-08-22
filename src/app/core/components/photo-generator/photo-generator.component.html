@@ -1,0 +1,5 @@
+<button (click)="getRandomPhoto()">Get Random Photo</button>
+
+<div *ngIf="photoToDisplay$ | async as photoToDisplay">
+  <img [src]="photoToDisplay" />
+</div>
